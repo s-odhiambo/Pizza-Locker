@@ -7,5 +7,7 @@ h1{
  margin-top: 0px;
  font-weight: 200;
  font-family: 'Itim', cursive;
- font-size: 500%;
+ font-size: 900%;
+ z-index: -500px;
+ 
 }
