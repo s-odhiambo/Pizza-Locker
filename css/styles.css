@@ -3,6 +3,10 @@ body{
   padding: 0px;
   margin: 0px;
 }
+.navbar{
+  position:fixed;
+
+}
 
 .home{
   background-image: url("/images/menu-3206749_960_720.jpg");
@@ -153,5 +157,5 @@ padding-left: 50px;
 #eve>p{
  text-align: center;
  padding-top:60px;
- font-size:20px;
+ font-size:30px;
 }
