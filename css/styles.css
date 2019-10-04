@@ -54,7 +54,7 @@ h1{
 }
 
 h3{
-  color:whitesmoke;
+  color:black
   padding-top:20px;
 }
 
@@ -67,6 +67,7 @@ h5{
   text-align:center;
   padding-top:50px;
   font-size:50px;
+  padding-bottom: 20px;
 }
 
 .str>img{
@@ -115,7 +116,13 @@ h5{
   text-align: center;
   top: 20%;
 }
+#words>h3{
+  color:white;
+}
 
+#words2>h3{
+color: white;
+}
 
 #words2{
   padding-left: 5%;
@@ -124,7 +131,7 @@ h5{
 }
 
 #words2>img{
-  padding-left: 40px;
+  padding-left: 70px;
   }
   
 
