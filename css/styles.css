@@ -12,7 +12,6 @@ body{
   z-index: -500px;
 }
 
-
 #nav>{
   color:whitesmoke;
 }
@@ -55,7 +54,6 @@ h1{
 
 h3{
   color:black
-  padding-top:20px;
 }
 
 h4{
@@ -68,6 +66,10 @@ h5{
   padding-top:50px;
   font-size:50px;
   padding-bottom: 20px;
+}
+
+h6{
+  text-align: center;
 }
 
 .str>img{
@@ -145,4 +147,10 @@ padding-left: 50px;
 
 .fnl{
   padding-top: 120px;
+}
+
+#eve>p{
+ text-align: center;
+ padding-top:60px;
+ font-size:20px;
 }
