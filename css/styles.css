@@ -39,6 +39,7 @@ body{
   background-position: center;
   background-size: cover;
   height: 100vh;
+  z-index: -6;
 }
 
 h1{
@@ -83,13 +84,14 @@ h3{
 }
 
 #words>p{
-  color: whitesmoke;
+  color:cyan;
   font-size:25px;
 }
 
 #words2>p{
-  color:whitesmoke;
+  color:cyan;
   font-size:25px;
+  text-decoration:underline;
 }
 
 
@@ -101,12 +103,19 @@ h3{
   text-align: center;
   top: 20%;
 }
-img{
-  padding-right:50px;
-}
+
 
 #words2{
   padding-left: 5%;
   text-align: center;
   top: 20%;
+}
+
+#words2>img{
+  padding-left: 40px;
+  }
+  
+
+#words>img{
+padding-left: 50px;
 }
