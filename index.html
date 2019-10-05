@@ -18,25 +18,25 @@
 
 <body>
   <div class="home">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto static-top">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Reservations</a>
+            <a class="nav-link" href="#h4">Reservations</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Location & Hours</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
+            <a class="nav-link" href="#menu">Menu</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Order Online</a>
@@ -75,7 +75,7 @@
       </div>  
   </div>
   
-  <h4>RESERVATIONS</h4>
+  <div id="h4"><h4>RESERVATIONS</h4></div>
   <h5>MAKE A RESERVATION</h5>
   <div class="team">
   <div class="row">
@@ -90,9 +90,10 @@
       </form>
   </div>
 </div>
+<div id="menu"><h5>Our Menu</h5></div>
 <div class="fnl">
   <div class="container-fluid">
-    <div class="row pt-5">
+    <div class="row">
       <div class="col-md-3"><img src="images/pizza-2119635_960_720.jpg" width="100%"></div>
       <div class="col-md-3"><img src="images/pizza-217156_960_720.jpg" width="100%"></div>
       <div class="col-md-3"><img src="images/pizza-2341377_960_720.jpg" width="100%" height="222"></div>
@@ -106,37 +107,205 @@
 </div>
 <div id="pizz">
 <select class="mdb-select md-form" id='size'>
-    <option value="" disabled selected>Choose pizza size</option>
+    <option value="0" disabled selected>Choose pizza size</option>
     <option value="1">Small</option>
     <option value="2">Medium</option>
     <option value="3">Large</option>
+    <option value="4">X-Large</option>
+    <option value="5">Party Tray</option>
+    <option value="6">Gluten Free</option>
+    <option value="7">Nino</option>
   </select>
   <select class="mdb-select md-form" id='crust'>
-      <option value="" disabled selected>Choose type of crust</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
+      <option value="0" disabled selected>Choose type of crust</option>
+      <option value="1">Stuffed</option>
+      <option value="2">Thin and Crispy</option>
+      <option value="3">Gluten-Free</option>
+      <option value="4">Cauliflower</option>
+      <option value="5">Keto</option>
+      <option value="6">Easy Paleo</option>
+      <option value="7">Basic</option>
+      <option value="8">Canned Chickpea</option>
+      <option value="9">Home Made</option>
+      <option value="10">Ranch</option>
+      <option value="11">Oatmeal</option>
+      <option value="12">Easy Thin</option>
+      <option value="13">Quick Cornmeal</option>
     </select>
     <select class="mdb-select md-form" id='top'>
-        <option value="" disabled selected>Choose Topping</option>
+        <option value="0" disabled selected>Choose Topping</option>
         <option value="1">Cheesy Moplian</option>
         <option value="2">The Gardener</option>
         <option value="3">Dr.pepperoni</option>
-        <option value="3">The Carnivore</option>
-        <option value="3">The Smarf</option>
-        <option value="3">THE Garbage Disposal</option>
-        <option value="3">Onions</option>
-        <option value="3">Mushrooms</option>
-        <option value="3">Olives</option>
-        <option value="3">Garlic</option>
-        <option value="3">Cheese</option>
-        <option value="3">Ham</option>
-        <option value="3">Veggies</option>
+        <option value="4">The Carnivore</option>
+        <option value="5">The Smarf</option>
+        <option value="6">THE Garbage Disposal</option>
+        <option value="7">Onions</option>
+        <option value="8">Mushrooms</option>
+        <option value="9">Olives</option>
+        <option value="10">Garlic</option>
+        <option value="11">Cheese</option>
+        <option value="12">Ham</option>
+        <option value="13">Veggies</option>
       </select>
+      <select class="mdb-select md-form" id="end">
+          <option value="0" disabled selected>Choose Quantity* (g)</option>
+          <option value="1">100</option>
+          <option value="2">125</option>
+          <option value="3">160</option>
+          <option value="4">230</option>
+          <option value="5">345</option>
+          <option value="6">460</option>
+          <option value="7">575</option>
+          </select><br><br><br>
+          <input class="btn btn-success" type="place order" value="Place Order" pt->
     </div>
 <div id="eve">
 <p>Private Events</p>
 <h6>FANCY A PIZZA PARTY</h6>
+<!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5">
+
+    <div style="background-color: #21d192;">
+      <div class="container">
+  
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Get connected with us on social networks!</h6>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+  
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+  
+          </div>
+          <!-- Grid column -->
+  
+        </div>
+        <!-- Grid row-->
+  
+      </div>
+    </div>
+  
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+  
+      <!-- Grid row -->
+      <div class="row mt-3 dark-grey-text">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+  
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Company name</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+            consectetur
+            adipisicing elit.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Products</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a class="dark-grey-text" href="#!">MDBootstrap</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">MDWordPress</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">BrandFlow</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a class="dark-grey-text" href="#!">Your Account</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Shipping Rates</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Help</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center text-black-50 py-3">© 2019 Copyright:
+      <a class="dark-grey-text" href="https://mdbootstrap.com/education/bootstrap/"></a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 
 </body>
 
