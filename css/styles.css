@@ -53,9 +53,6 @@ h1{
   font-size: 150px;
   color:whitesmoke;
 }
-.str>h2{
-  
-}
 
 h3{
   color:black
@@ -159,4 +156,8 @@ padding-left: 50px;
  text-align: center;
  padding-top:60px;
  font-size:30px;
+}
+
+#pizz{
+  text-align: center;
 }
