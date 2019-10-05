@@ -160,4 +160,9 @@ padding-left: 50px;
 
 #pizz{
   text-align: center;
+  padding-top: 60px;
+  /* margin-right: 50px; */
+}
+#size,#crust,#top{
+  margin-right:10px;
 }
