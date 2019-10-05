@@ -4,7 +4,7 @@ body{
   margin: 0px;
 }
 .navbar{
-  position:fixed;
+  position:sticky;
 
 }
 
@@ -14,6 +14,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -500px;
+  background-attachment: fixed;
 }
 
 #nav>{
@@ -53,7 +54,7 @@ h1{
   color:whitesmoke;
 }
 .str>h2{
-  border:5px solid black;
+  
 }
 
 h3{
