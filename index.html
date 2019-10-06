@@ -19,7 +19,6 @@
 <body>
   <div class="home">
     <nav class="navbar navbar-expand-lg navbar-light bg-success">
-      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -39,7 +38,7 @@
             <a class="nav-link" href="#menu">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Order Online</a>
+            <a class="nav-link" href="#footer">Order Online</a>
           </li>
         </ul>
       </div>
@@ -63,14 +62,16 @@
     <div id="trial">
       <div id="words"><br><br>
           <h3>ORDER TAKE OUT</h3>
-        <img src="images/large_cubediamond.jpg" id="logo">
+          <img src="images/large_cubediamond.jpg" id="logo">
         <p>See Our Menu</p>
+        <button><a href="#menu">Click</a></button>
         </div>
         
         <div id="words2"><br><br>
             <h3>EAT HERE</h3>
         <img src="images/large_cubediamond.jpg" id="logo">
         <p> See Our Menu</p>
+        <button><a  href="#menu">Click</a></button>
         </div>
       </div>  
   </div>
@@ -94,27 +95,27 @@
 <div class="fnl">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-3"><img src="images/pizza-2119635_960_720.jpg" width="100%"></div>
-      <div class="col-md-3"><img src="images/pizza-217156_960_720.jpg" width="100%"></div>
-      <div class="col-md-3"><img src="images/pizza-2341377_960_720.jpg" width="100%" height="222"></div>
-      <div class="col-md-3"><img src="images/pizza-2618726_960_720.jpg" width="100%" height="220"></div>
-      <div class="col-md-3"><img src="images/pizza-2707694_960_720.jpg" width="100%" height="220"></div>
-      <div class="col-md-3"><img src="images/pizza-705680_960_720.jpg" width="100%"></div>
-      <div class="col-md-3"><img src="images/pizza-2934672_960_720.jpg" width="100%"></div>
-      <div class="col-md-3"><img src="images/pizza-356412__340.jpg" width="100%"></div>
+      <div class="col-md-3"><img src="images/pizza-2119635_960_720.jpg" width="100%"><p>Ksh=850</p></div>
+      <div class="col-md-3"><img src="images/pizza-217156_960_720.jpg" width="100%"><p>Ksh=1,000</p></div>
+      <div class="col-md-3"><img src="images/pizza-2341377_960_720.jpg" width="100%" height="222"><p>Ksh=1,150</p></div>
+      <div class="col-md-3"><img src="images/pizza-2618726_960_720.jpg" width="100%" height="220"><p>Ksh=1,250</p></div>
+      <div class="col-md-3"><img src="images/pizza-2707694_960_720.jpg" width="100%" height="220"><p>Ksh=1,300</p></div>
+      <div class="col-md-3"><img src="images/pizza-705680_960_720.jpg" width="100%"><p>Ksh=1,450</p></div>
+      <div class="col-md-3"><img src="images/pizza-2934672_960_720.jpg" width="100%"><p>Ksh=1,500</p></div>
+      <div class="col-md-3"><img src="images/pizza-356412__340.jpg" width="100%"><p>Ksh=1,650</p></div>
     </div>
   </div>
 </div>
 <div id="pizz">
 <select class="mdb-select md-form" id='size'>
     <option value="0" disabled selected>Choose pizza size</option>
-    <option value="1">Small</option>
-    <option value="2">Medium</option>
-    <option value="3">Large</option>
-    <option value="4">X-Large</option>
-    <option value="5">Party Tray</option>
-    <option value="6">Gluten Free</option>
-    <option value="7">Nino</option>
+    <option value="1">Small(Ksh=850)</option>
+    <option value="2">Medium(Ksh=1,850)</option>
+    <option value="3">Large(Ksh=2,000)</option>
+    <option value="4">X-Large(Ksh=2,500)</option>
+    <option value="5">Party Tray(Ksh=3,500)</option>
+    <option value="6">Gluten Free(Ksh=4,500)</option>
+    <option value="7">Nino(Ksh=5,000)</option>
   </select>
   <select class="mdb-select md-form" id='crust'>
       <option value="0" disabled selected>Choose type of crust</option>
@@ -158,154 +159,87 @@
           <option value="6">460</option>
           <option value="7">575</option>
           </select><br><br><br>
-          <input class="btn btn-success" type="place order" value="Place Order" pt->
+          <button type="submit" class="btn btn-success">Place an Order</button>
     </div>
 <div id="eve">
 <p>Private Events</p>
 <h6>FANCY A PIZZA PARTY</h6>
-<!-- Footer -->
-<footer class="page-footer font-small blue-grey lighten-5">
+<div id="footer">
+<footer class="page-footer font-small blue-grey">
 
-    <div style="background-color: #21d192;">
+    <div style="background-color: #18a323;">
       <div class="container">
   
-        <!-- Grid row-->
         <div class="row py-4 d-flex align-items-center">
   
-          <!-- Grid column -->
+
           <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-            <h6 class="mb-0">Get connected with us on social networks!</h6>
+            <h6 class="mb-0">Get connected with me on social networks!</h6>
           </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-6 col-lg-7 text-center text-md-right">
-  
-            <!-- Facebook -->
-            <a class="fb-ic">
-              <i class="fab fa-facebook-f white-text mr-4"> </i>
-            </a>
-            <!-- Twitter -->
-            <a class="tw-ic">
-              <i class="fab fa-twitter white-text mr-4"> </i>
-            </a>
-            <!-- Google +-->
-            <a class="gplus-ic">
-              <i class="fab fa-google-plus-g white-text mr-4"> </i>
-            </a>
-            <!--Linkedin -->
-            <a class="li-ic">
-              <i class="fab fa-linkedin-in white-text mr-4"> </i>
-            </a>
-            <!--Instagram-->
-            <a class="ins-ic">
-              <i class="fab fa-instagram white-text"> </i>
-            </a>
-  
-          </div>
-          <!-- Grid column -->
-  
         </div>
-        <!-- Grid row-->
-  
       </div>
     </div>
-  
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left mt-5">
-  
-      <!-- Grid row -->
+      <div class="container text-center text-md-left mt-5">
       <div class="row mt-3 dark-grey-text">
-  
-        <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-  
-          <!-- Content -->
-          <h6 class="text-uppercase font-weight-bold">Company name</h6>
+          <h6 class="text-uppercase font-weight-bold">COME GRAB A SLICE</h6>
           <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-            consectetur
-            adipisicing elit.</p>
+          <p>Monday-Friday 07:00AM-10:00PM</p>
+          <p>Sartuday 09:00AM-10:00PM</p>
+          <p>Sunday 08:00-11:00PM</p><br>
+          <p>Tel:+254791 555 693</p><br>
+          <p>Email:samuelangienda1998@gmail.com</p>
   
         </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-  
-          <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold">Products</h6>
-          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <h6 class="text-uppercase font-weight-bold">Product</h6>
+          <hr class="teal success-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+          
           <p>
-            <a class="dark-grey-text" href="#!">MDBootstrap</a>
+            <a class="dark-grey-text" href="#menu">Quality Pizza</a>
           </p>
-          <p>
-            <a class="dark-grey-text" href="#!">MDWordPress</a>
-          </p>
-          <p>
-            <a class="dark-grey-text" href="#!">BrandFlow</a>
-          </p>
-          <p>
-            <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
-          </p>
-  
         </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-  
-          <!-- Links -->
           <h6 class="text-uppercase font-weight-bold">Useful links</h6>
           <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <a class="dark-grey-text" href="#!">Your Account</a>
+            <a class="dark-grey-text" href="https://www.facebook.com/">Facebook</a>
           </p>
           <p>
-            <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+            <a class="dark-grey-text" href="https://accounts.google.com/signin/v2/sl/pwd?service=accountsettings&passive=1209600&osid=1&continue=https%3A%2F%2Fmyaccount.google.com%2Fsigninoptions%2Fpassword%3Futm_source%3Dgoogle-account%26utm_medium%3Dweb%26continue%3Dhttps%3A%2F%2Fmyaccount.google.com%2Fpersonal-info&followup=https%3A%2F%2Fmyaccount.google.com%2Fsigninoptions%2Fpassword%3Futm_source%3Dgoogle-account%26utm_medium%3Dweb%26continue%3Dhttps%3A%2F%2Fmyaccount.google.com%2Fpersonal-info&emr=1&mrp=security&rart=ANgoxccsMLekHn1emJiSBQMjR2wEK2mT3DZ17hubPX1Msa255HgEBc3YzwCg9CM5OeqR93RJ_L4jV2RrsuDJAQQXstmvRFON8g&authuser=0&csig=AF-SEnYM5IGUpQ2vW521%3A1568578583&flowName=GlifWebSignIn&flowEntry=ServiceLogin>Google"></a>
           </p>
           <p>
-            <a class="dark-grey-text" href="#!">Shipping Rates</a>
+            <a class="dark-grey-text" href="https://accounts.google.com/signout/chrome/landing?continue=https://mail.google.com/mail&oc=https://mail.google.com/mail&hl=en">Email</a>
           </p>
           <p>
-            <a class="dark-grey-text" href="#!">Help</a>
+            <a class="dark-grey-text" href="https://twitter.com/">Twitter</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="https://www.linkedin.com/uas/login?trk=reset_password">Linked in</a>
           </p>
   
         </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-  
-          <!-- Links -->
           <h6 class="text-uppercase font-weight-bold">Contact</h6>
           <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+            <i class="fas fa-home mr-3"></i> Nairibi, CBD 101, Kenya</p>
           <p>
-            <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+            <i class="fas fa-envelope mr-3"></i> samuelangienda1998@gmail.com</p>
           <p>
-            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <i class="fas fa-phone mr-3"></i> (+254)791 555 693</p>
           <p>
-            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-  
+            <i class="fas fa-print mr-3"></i> (+254)797 061 061</p>
         </div>
-        <!-- Grid column -->
-  
       </div>
-      <!-- Grid row -->
-  
-    </div>
-    <!-- Footer Links -->
-  
-    <!-- Copyright -->
+    </div>  
     <div class="footer-copyright text-center text-black-50 py-3">© 2019 Copyright:
       <a class="dark-grey-text" href="https://mdbootstrap.com/education/bootstrap/"></a>
     </div>
-    <!-- Copyright -->
-  
   </footer>
-  <!-- Footer -->
+</div>
+  
 
 </body>
 
