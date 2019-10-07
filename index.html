@@ -6,14 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pizza-Locker</title>
-  <script src="js/scripts.js"></script>
   <script src="js/jQuery.js"></script>
-
-  <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Original+Surfer&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
-
+  <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -83,9 +81,9 @@
       <form>
         Date:<input type="datetime-local" name="date">
       </form>
-      <form action="/action_page.php">
+      <form>
         Time: <input type="time" name="usr_time">
-        <form action="/action_page.php">
+        <form>
           Party Size:<input type="number" name="usr_number">
           <input type="submit">
         </form>
@@ -124,60 +122,68 @@
       </div>
     </div>
   </div>
-  <div id="pizz">
-    <select class="mdb-select md-form" id='size'>
-      <option value="0" disabled selected>Choose pizza size</option>
-      <option value="1">Small(Ksh=850)</option>
-      <option value="2">Medium(Ksh=1,850)</option>
-      <option value="3">Large(Ksh=2,000)</option>
-      <option value="4">X-Large(Ksh=2,500)</option>
-      <option value="5">Party Tray(Ksh=3,500)</option>
-      <option value="6">Gluten Free(Ksh=4,500)</option>
-      <option value="7">Nino(Ksh=5,000)</option>
-    </select>
-    <select class="mdb-select md-form" id='crust'>
-      <option value="0" disabled selected>Choose type of crust</option>
-      <option value="1">Stuffed</option>
-      <option value="2">Thin and Crispy</option>
-      <option value="3">Gluten-Free</option>
-      <option value="4">Cauliflower</option>
-      <option value="5">Keto</option>
-      <option value="6">Easy Paleo</option>
-      <option value="7">Basic</option>
-      <option value="8">Canned Chickpea</option>
-      <option value="9">Home Made</option>
-      <option value="10">Ranch</option>
-      <option value="11">Oatmeal</option>
-      <option value="12">Easy Thin</option>
-      <option value="13">Quick Cornmeal</option>
-    </select>
-    <select class="mdb-select md-form" id='top'>
-      <option value="0" disabled selected>Choose Topping</option>
-      <option value="1">Cheesy Moplian</option>
-      <option value="2">The Gardener</option>
-      <option value="3">Dr.pepperoni</option>
-      <option value="4">The Carnivore</option>
-      <option value="5">The Smarf</option>
-      <option value="6">THE Garbage Disposal</option>
-      <option value="7">Onions</option>
-      <option value="8">Mushrooms</option>
-      <option value="9">Olives</option>
-      <option value="10">Garlic</option>
-      <option value="11">Cheese</option>
-      <option value="12">Ham</option>
-      <option value="13">Veggies</option>
-    </select>
-    <select class="mdb-select md-form" id="end">
-      <option value="0" disabled selected>Choose Quantity* (g)</option>
-      <option value="1">100</option>
-      <option value="2">125</option>
-      <option value="3">160</option>
-      <option value="4">230</option>
-      <option value="5">345</option>
-      <option value="6">460</option>
-      <option value="7">575</option>
-    </select><br><br><br>
-    <button type="submit" class="btn btn-success">Place an Order</button>
+  <div class="an">
+    <h3>Place an Order</h3>
+  </div><br><br>
+  <div class="all">
+    <form action="" id="motiv" action="index.html">
+      Select:<select class="mdb-select md-form colorful-select dropdown-primary" id="select">
+        <option value=""></option>
+        <option value="hawa">Hawaiian</option>
+        <option value="marinara">Marinara</option>
+        <option value="chicken">Chicken Mushroom</option>
+        <option value="chicken">Chicken bba</option>
+        <option value="vegeterian">Vegeterian</option>
+        <option value="mexican">Mexican</option>
+        <option value="regina">Regina</option>
+        <option value="seafood">Seafood</option>
+        <option value="pepperoni">Pepperoni</option>
+      </select>
+      Size:<select class="mdb-select md-form colorful-select dropdown-primary" id="size">
+        <option value="0">Small--Ksh1000</option>
+        <option value="1">Medium--Ksh1500</option>
+        <option value="2">Large--Ksh2000</option>
+        <option value="3">Family--Ksh2500</option>
+      </select>
+      Toppings:<select class="mdb-select md-form colorful-select dropdown-primary" id="toppings">
+        <option value=""></option>
+        <option value="mush">Mushroom</option>
+        <option value="green">Green pepper</option>
+        <option value="gor">Gourmate</option>
+        <option value="home">Home Made</option>
+        <option value="chick">Chicken</option>
+        <option value="broc">Broccoli</option>
+        <option value="slam">Salami Olive</option>
+        <option value="crem">Creamy Chicken</option>
+        <option value="cauliflower">Cauliflower</option>
+        <option value="sauce">Sausage</option>
+      </select>
+      Crusts:<select class="mdb-select md-form colorful-select dropdown-primary" id="crusts">
+        <option value=""></option>
+        <option value="thin crust">Thin Crust</option>
+        <option value="thick crust">Thick Crust</option>
+        <option value="deep crust">Deep Crust</option>
+        <option value="cheese filled crust">Cheese Filled Crust</option>
+        <option value="home made crust">Home Made Crust</option>
+        <option value="mini crust">Mini Crust</option>
+        <option value="canned chickpea crust">Canned Chickpea Crust</option>
+        <option value="stuffed crust">Stuffed Crust--700</option>
+        <option value="thin crispy crust">Thin Crispy Crust</option>
+        <option value="low carb cauliflower">Low Carb Cauliflower</option>
+      </select>
+      Delivery:<select class="mdb-select md-form colorful-select dropdown-primary" id="delivery">
+        <option value=100>Delivery</option>
+        <option value=0>No Delivery</option>
+      </select>
+      Quantity:<select class="mdb-select md-form colorful-select dropdown-success" id="quantity" type="number"
+        name="quantity" value="" min="1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <button style="float: right;" type="submit" class="btn btn-success mt-5 mr-5 mb-5" id="button" onclick="return totalPrice();">Checkout</button>
+    </form>
   </div>
   <div id="eve">
     <p>Private Events</p>
